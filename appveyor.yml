@@ -1,5 +1,5 @@
 # appveyor.yml reference : http://www.appveyor.com/docs/appveyor-yml
-version: "2.0.0.{build}"
+version: "3.0.0.{build}"
 
 # Source Config
 platform: x64

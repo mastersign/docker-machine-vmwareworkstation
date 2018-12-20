@@ -1,5 +1,6 @@
 # Changelog
 
+## 3.0.0 (2018-12-20)
 IMPROVEMENTS:
 * Update github.com/docker/machine to `0.16.0`
 CHANGES:
