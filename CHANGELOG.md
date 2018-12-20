@@ -2,6 +2,8 @@
 
 IMPROVEMENTS:
 * Update github.com/docker/machine to `0.16.0`
+CHANGES:
+* Switched from network type `vmxnet3` to `e1000`
 
 ## 2.0.0
 IMPROVEMENTS:
