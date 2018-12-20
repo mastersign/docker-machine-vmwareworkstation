@@ -3,29 +3,36 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:6da51e5ec493ad2b44cb04129e2d0a068c8fb9bd6cb5739d199573558696bb94"
   name = "github.com/Azure/go-ansiterm"
   packages = [
     ".",
-    "winterm"
+    "winterm",
   ]
+  pruneopts = "UT"
   revision = "d6e3b3328b783f23731bc4d058875b0371ff8109"
 
 [[projects]]
+  digest = "1:a2c1d0e43bd3baaa071d1b9ed72c27d78169b2b269f71c105ac4ba34b1be4a39"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
+  pruneopts = "UT"
   revision = "346938d642f2ec3594ed81d874461961cd0faa76"
   version = "v1.1.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:fd8c7bf9d26923754ce318187a884d3b75f1001fda152a3ea57703ef384da37e"
   name = "github.com/docker/docker"
   packages = [
     "pkg/term",
-    "pkg/term/windows"
+    "pkg/term/windows",
   ]
+  pruneopts = "UT"
   revision = "635f359f8b61887faa9427d9c673be96faf992b5"
 
 [[projects]]
+  digest = "1:d1964ce4176b1b42018f18469ca2588d2f44e7e3f2129b3ff1f67fdace27e712"
   name = "github.com/docker/machine"
   packages = [
     "libmachine/drivers",
@@ -38,49 +45,70 @@
     "libmachine/ssh",
     "libmachine/state",
     "libmachine/version",
-    "version"
+    "version",
   ]
-  revision = "89b833253d9412716a0291cbdccc94454c33d1b5"
-  version = "v0.14.0"
+  pruneopts = "UT"
+  revision = "702c267fc3d486f1ab9709ffc0d31935be3375dc"
+  version = "v0.16.0"
 
 [[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
   name = "github.com/pmezard/go-difflib"
   packages = ["difflib"]
+  pruneopts = "UT"
   revision = "792786c7400a136282c1664665ae0a8db921c6c2"
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:9e9193aa51197513b3abcb108970d831fbcf40ef96aa845c4f03276e1fa316d2"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
+  pruneopts = "UT"
   revision = "c155da19408a8799da419ed3eeb0cb5db0ad5dbc"
   version = "v1.0.5"
 
 [[projects]]
+  digest = "1:f85e109eda8f6080877185d1c39e98dd8795e1780c08beca28304b87fd855a1c"
   name = "github.com/stretchr/testify"
   packages = ["assert"]
+  pruneopts = "UT"
   revision = "12b6f73e6084dad08a7c6e575284b177ecafbc71"
   version = "v1.2.1"
 
 [[projects]]
+  digest = "1:c520e4d4fc9976e4da44ee0a3bdd5a45e8a206a72c1ccd2089f3d184f5eb942a"
   name = "golang.org/x/crypto"
   packages = [
     "curve25519",
     "ed25519",
     "ed25519/internal/edwards25519",
     "ssh",
-    "ssh/terminal"
+    "ssh/terminal",
   ]
+  pruneopts = "UT"
   revision = "51714a8c4ac1764f07ab4127d7f739351ced4759"
 
 [[projects]]
   branch = "master"
+  digest = "1:99e9f259afc6328efa223a59cdcfac9f974a9708c5dc1512948c995069ed1a5b"
   name = "golang.org/x/sys"
   packages = ["unix"]
+  pruneopts = "UT"
   revision = "378d26f46672a356c46195c28f61bdb4c0a781dd"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "51badfff11f3c9bd8c383caf9716db5bb263a2b15b43d2614a695d2596f5bdc5"
+  input-imports = [
+    "github.com/docker/machine/libmachine/drivers",
+    "github.com/docker/machine/libmachine/drivers/plugin",
+    "github.com/docker/machine/libmachine/log",
+    "github.com/docker/machine/libmachine/mcnflag",
+    "github.com/docker/machine/libmachine/mcnutils",
+    "github.com/docker/machine/libmachine/ssh",
+    "github.com/docker/machine/libmachine/state",
+    "github.com/stretchr/testify/assert",
+    "golang.org/x/crypto/ssh",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
